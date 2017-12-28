@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:orientation="vertical"
+    android:background="#FFF"
+      tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv_depthvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40px"
+            android:textColor="@android:color/holo_red_light"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40px"
+        android:textColor="@android:color/holo_red_light"/>
+    <com.hjimi.depth.ui.TextViewDouble
+        android:layout_width="match_parent"
+        android:id="@+id/textviewdou"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+    </com.hjimi.depth.ui.TextViewDouble>
+    <com.hjimi.depth.ui.SetValueUI
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/setvalueview"
+        ></com.hjimi.depth.ui.SetValueUI>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.hjimi.depth.colorview.GLPanel2
+        android:id="@+id/sv_depth_view0"
+        android:paddingLeft="20px"
+        android:layout_width="640px"
+        android:layout_height="480px"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+    <View
+        android:layout_width="50px"
+        android:layout_height="1dp"/>
+    <com.hjimi.depth.GLPanel
+        android:id="@+id/sv_depth_view"
+
+        android:layout_width="640px"
+        android:layout_height="480px"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+</LinearLayout>
+
+
+
+
+</LinearLayout>
